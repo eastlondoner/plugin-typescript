@@ -2,9 +2,19 @@
 	"compilerOptions": {
 		"jsx": "react",
 		"target": "es5",
-		"module": "system"
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": false,
+		"suppressImplicitAnyIndexErrors": true
 	},
 	"files": [
 		"./src/index.tsx"
+	],
+	"exclude": [
+		"jspm_packages",
+		"node_modules"
 	]
 }

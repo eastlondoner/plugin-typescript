@@ -1,7 +1,9 @@
 import React from 'react';
 import {CalculatorStore} from './calculator-store';
 
-export class Calculator extends React.Component<any, any> {
+//import 'systemjs-hot-reloader/default-listener.js';
+
+export class Calculator extends React.Component<null, null> {
    constructor(props) {
       super(props);
       this.calculatorStore = new CalculatorStore();
@@ -27,7 +29,7 @@ export class Calculator extends React.Component<any, any> {
    inputButton(digit: number) {
       return <button className="adder-button adder-button-digit"
                      key={digit}
-                     onClick={() => this.input(digit)}>{digit}</button>;
+                     onClick={() => this.input(digit)}>{digit}f</button>;
    }
 
    render() {

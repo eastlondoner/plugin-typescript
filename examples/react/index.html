@@ -9,19 +9,17 @@
    <meta name="fragment" content="!" />
 
 	<title>plugin-typescript react example</title>
-   <base href="/">
-
-   <script src="jspm_packages/system.src.js"></script>
+   <base href=".">
+    <link rel="stylesheet", href="src/calculator.css"/>
+    <script src="jspm_packages/system.src.js"></script>
 	<script src="jspm.browser.js"></script>
 	<script src="jspm.config.js"></script>
 </head>
 <body>
    <div id="body"></div>
    <script>
-      //System.trace = true
-      // System.import('systemjs-hot-reloader').then(function(HotReloader){
-      //    new HotReloader.default('http://localhost:8080')  // chokidar-socket-emitter port
-      // });
+        System.trace = true
+
 
 		System.import('src')
 			.then(function() {

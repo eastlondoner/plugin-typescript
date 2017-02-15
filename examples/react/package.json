@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "jspm bundle src - react - react-dom - ts -wid ",
+    "start": "jspm bundle src - react - react-dom - ts -wd ",
     "example": "node ../tasks/start",
     "build": "jspm bundle react + react-dom + ts dependencies.js",
     "bundle": "node ../tasks/build"

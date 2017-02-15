@@ -20,7 +20,10 @@
    <script>
         System.trace = true
 
-
+        System.import('systemjs-hot-reloader/default-listener.js').catch(function(err) {
+            console.log(err);
+            console.log(err.originalErr);
+        });
 		System.import('src')
 			.then(function() {
 				console.log('running');

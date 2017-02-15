@@ -3,33 +3,32 @@ import {CalculatorStore} from './calculator-store';
 
 //import 'systemjs-hot-reloader/default-listener.js';
 
-export class Calculator extends React.Component<null, null> {
+export class Calculator extends React.Component<any, CalculatorStore> {
    constructor(props) {
       super(props);
-      this.calculatorStore = new CalculatorStore();
+      this.state = new CalculatorStore();
    }
 
-   private calculatorStore: CalculatorStore;
 
    input(digit) {
-      this.calculatorStore.input(digit);
+      this.state.input(digit);
       this.forceUpdate();
    }
 
    clear() {
-      this.calculatorStore.clear();
+      this.state.clear();
       this.forceUpdate();
    }
 
    add() {
-      this.calculatorStore.add();
+      this.state.add();
       this.forceUpdate();
    }
 
    inputButton(digit: number) {
       return <button className="adder-button adder-button-digit"
                      key={digit}
-                     onClick={() => this.input(digit)}>{digit}q</button>;
+                     onClick={() => this.input(digit)}>{digit}</button>;
    }
 
    render() {
@@ -63,11 +62,11 @@ export class Calculator extends React.Component<null, null> {
       return (
          <div className="adder-container">
             <div className="adder-row">
-               <span className="adder-operand adder-display">{this.calculatorStore.operand}</span>
+               <span className="adder-operand adder-display">{this.state.operand}</span>
             </div>
 
             <div className="adder-row">
-               <span className="adder-total adder-display">{this.calculatorStore.total}</span>
+               <span className="adder-total adder-display">{this.state.total}</span>
             </div>
 
             {buttonrows}

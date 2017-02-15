@@ -3,7 +3,7 @@ SystemJS.config({
     "map": {
       "tty": "npm:jspm-nodelibs-tty@0.2.0",
       "clean-css": "npm:clean-css@3.4.24",
-      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.9",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.6.0",
       "css": "github:frankwallis/plugin-css@master"
     },
     "packages": {
@@ -23,16 +23,16 @@ SystemJS.config({
           "graceful-readlink": "npm:graceful-readlink@1.0.1"
         }
       },
-      "github:capaj/systemjs-hot-reloader@0.5.9": {
+      "npm:debug@2.6.1": {
+        "map": {
+          "ms": "npm:ms@0.7.2"
+        }
+      },
+      "github:capaj/systemjs-hot-reloader@0.6.0": {
         "map": {
           "debug": "npm:debug@2.6.1",
           "weakee": "npm:weakee@1.0.0",
           "socket.io-client": "github:socketio/socket.io-client@1.7.2"
-        }
-      },
-      "npm:debug@2.6.1": {
-        "map": {
-          "ms": "npm:ms@0.7.2"
         }
       }
     }

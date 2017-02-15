@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "jspm bundle src - react - react-dom - ts -wd ",
+    "start": "jspm bundle src - react - react-dom - ts - systemjs-hot-reloader -wd ",
     "example": "node ../tasks/start",
     "build": "jspm bundle react + react-dom + ts dependencies.js",
     "bundle": "node ../tasks/build"
@@ -17,7 +17,7 @@
     "devDependencies": {
       "clean-css": "^3.4.3",
       "css": "github:frankwallis/plugin-css@master",
-      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.3",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.6.0",
       "tty": "jspm-nodelibs-tty@^0.2.0"
     },
     "peerDependencies": {

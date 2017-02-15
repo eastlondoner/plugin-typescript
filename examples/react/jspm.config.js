@@ -90,12 +90,13 @@ SystemJS.config({
     "net": "npm:jspm-nodelibs-net@0.2.0",
     "os": "npm:jspm-nodelibs-os@0.2.0",
     "path": "npm:jspm-nodelibs-path@0.2.0",
+    "plugin-typescript": "github:frankwallis/plugin-typescript@5.3.3",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
     "react": "npm:react@15.4.2",
     "react-dom": "npm:react-dom@15.4.2",
     "stream": "npm:jspm-nodelibs-stream@0.2.0",
     "string_decoder": "npm:jspm-nodelibs-string_decoder@0.2.0",
-    "ts": "github:frankwallis/plugin-typescript@6.0.5",
+    "ts": "github:frankwallis/plugin-typescript@5.3.3",
     "url": "npm:jspm-nodelibs-url@0.2.0",
     "util": "npm:jspm-nodelibs-util@0.2.0",
     "vm": "npm:jspm-nodelibs-vm@0.2.0",
@@ -353,11 +354,6 @@ SystemJS.config({
         "iconv-lite": "npm:iconv-lite@0.4.15"
       }
     },
-    "github:frankwallis/plugin-typescript@6.0.5": {
-      "map": {
-        "typescript": "npm:typescript@2.2.0"
-      }
-    },
     "npm:jspm-nodelibs-crypto@0.2.0": {
       "map": {
         "crypto-browserify": "npm:crypto-browserify@3.11.0"
@@ -413,6 +409,11 @@ SystemJS.config({
         "fbjs": "npm:fbjs@0.8.9",
         "loose-envify": "npm:loose-envify@1.3.1",
         "object-assign": "npm:object-assign@4.1.1"
+      }
+    },
+    "github:frankwallis/plugin-typescript@5.3.3": {
+      "map": {
+        "typescript": "npm:typescript@2.2.0"
       }
     }
   }

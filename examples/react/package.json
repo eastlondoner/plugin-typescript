@@ -10,6 +10,7 @@
     "dependencies": {
       "@types/react": "^15.0.9",
       "@types/react-dom": "^0.14.23",
+      "plugin-typescript": "github:frankwallis/plugin-typescript@5.3.3",
       "react-dom": "^15.2.1",
       "ts": "github:frankwallis/plugin-typescript@^6.0.4"
     },
@@ -95,7 +96,6 @@
   "devDependencies": {
     "@types/react": "^15.0.9",
     "@types/react-dom": "^0.14.23",
-    "jspm": "^0.17.0-beta.39",
     "typescript": "^2.1.6"
   }
 }
